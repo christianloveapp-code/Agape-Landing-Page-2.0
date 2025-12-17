@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 export const AuthVerify: React.FC = () => {
   const location = useLocation();
   const [status, setStatus] = useState<'redirecting' | 'error'>('redirecting');
+  const [deepLink, setDeepLink] = useState<string>('');
 
   useEffect(() => {
     // Get tokens from URL - check both query params and hash fragment
@@ -26,12 +27,19 @@ export const AuthVerify: React.FC = () => {
     });
 
     const queryString = params.toString();
-    const deepLink = queryString
-      ? `agape://auth/verify?${queryString}`
+    // If we have an access_token, it usually belongs in the hash for Supabase/OAuth
+    const hasAccessToken = params.has('access_token');
+    
+    const link = queryString
+      ? (hasAccessToken 
+          ? `agape://auth/verify#${queryString}` 
+          : `agape://auth/verify?${queryString}`)
       : 'agape://auth/verify';
+    
+    setDeepLink(link);
 
     // Redirect to the app
-    window.location.href = deepLink;
+    window.location.href = link;
 
     // Set error state after a delay if redirect didn't work
     const timeout = setTimeout(() => {
@@ -69,19 +77,35 @@ export const AuthVerify: React.FC = () => {
               </svg>
             </div>
             <h1 className="font-display text-2xl md:text-3xl font-bold mb-4">
-              Opening Agape...
+              Email Successfully Verified!
             </h1>
-            <p className="text-ink/70">
-              You're being redirected to the Agape app.
+            <p className="text-ink/70 mb-4">
+              Thank you for verifying your email. You're being redirected to the Agape app.
             </p>
+            {deepLink && (
+              <a href={deepLink} className="text-primary font-bold underline hover:text-primary/80 transition-colors">
+                Click here if not redirected
+              </a>
+            )}
           </>
         ) : (
           <>
             <h1 className="font-display text-2xl md:text-3xl font-bold mb-4">
-              Couldn't Open the App
+              Email Successfully Verified!
             </h1>
             <p className="text-ink/70 mb-6">
-              Make sure you have the Agape app installed on your device.
+              Please close this window and return to the Agape app to continue.
+            </p>
+            {deepLink && (
+               <div className="mb-8">
+                 <a href={deepLink} className="text-primary font-bold underline hover:text-primary/80 transition-colors">
+                   Open Agape App
+                 </a>
+               </div>
+            )}
+            
+            <p className="text-sm text-ink/50 mb-4 uppercase tracking-wider font-bold">
+              Don't have the app?
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

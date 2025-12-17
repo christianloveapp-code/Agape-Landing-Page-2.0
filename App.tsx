@@ -17,7 +17,9 @@ const App: React.FC = () => {
       <Routes>
         {/* Auth routes - no navbar/footer */}
         <Route path="/auth/verify" element={<AuthVerify />} />
+        <Route path="/auth/verify/*" element={<AuthVerify />} />
         <Route path="/auth/reset-password" element={<AuthResetPassword />} />
+        <Route path="/auth/reset-password/*" element={<AuthResetPassword />} />
 
         {/* Main routes with layout */}
         <Route
