@@ -8,34 +8,20 @@ export const AuthVerify: React.FC = () => {
   const [deepLink, setDeepLink] = useState<string>('');
 
   useEffect(() => {
-    // Get tokens from URL - check both query params and hash fragment
-    const searchParams = new URLSearchParams(location.search);
-    const hashParams = new URLSearchParams(location.hash.replace('#', ''));
-
-    // Build the deep link URL with all parameters
-    const params = new URLSearchParams();
-
-    // Collect params from query string
-    searchParams.forEach((value, key) => {
-      params.append(key, value);
-    });
-
-    // Collect params from hash fragment (some OAuth providers use hash)
-    hashParams.forEach((value, key) => {
-      if (!params.has(key)) {
-        params.append(key, value);
-      }
-    });
-
-    const queryString = params.toString();
-    // If we have an access_token, it usually belongs in the hash for Supabase/OAuth
-    const hasAccessToken = params.has('access_token');
+    // Simplified redirect logic to match the raw HTML snippet behavior
+    // We prioritize the hash as that's where Supabase/OAuth tokens usually live
+    const hash = location.hash;
+    const search = location.search;
     
-    const link = queryString
-      ? (hasAccessToken 
-          ? `agape://auth/verify#${queryString}` 
-          : `agape://auth/verify?${queryString}`)
-      : 'agape://auth/verify';
+    let link = 'agape://auth/verify';
+    
+    if (hash) {
+      // If hash exists, append it directly (includes #)
+      link += hash;
+    } else if (search) {
+      // Fallback to search params if no hash (includes ?)
+      link += search;
+    }
     
     setDeepLink(link);
 
