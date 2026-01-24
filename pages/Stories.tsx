@@ -51,14 +51,7 @@ export const Stories: React.FC = () => {
         <p className="font-body text-xl text-gray-700 mb-6">
           Join thousands of Christian singles who are finding meaningful relationships built on faith.
         </p>
-        <div className="inline-block">
-          <a
-            href="/"
-            className="font-heading text-lg px-8 py-3 bg-primary text-white border-[3px] border-ink shadow-neo hover:shadow-neo-hover active:shadow-neo-active transition-all inline-block"
-          >
-            Join the Waitlist
-          </a>
-        </div>
+
       </div>
 
       <div className="mt-16 text-center">
