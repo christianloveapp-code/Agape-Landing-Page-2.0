@@ -67,7 +67,7 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Visual / Phone Mockup */}
-      <div className="flex-1 w-full max-w-md relative mt-12 md:mt-0">
+      <div className="flex-1 w-full max-w-md relative md:mt-0">
         {/* Decorative elements behind phone */}
 
 
