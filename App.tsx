@@ -5,6 +5,7 @@ import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfService } from './pages/TermsOfService';
+import { About } from './pages/About';
 import { Help } from './pages/Help';
 import { FAQ } from './pages/FAQ';
 import { Stories } from './pages/Stories';
@@ -31,6 +32,7 @@ const App: React.FC = () => {
               <Navbar />
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
                 <Route path="/privacy" element={<PrivacyPolicy />} />
                 <Route path="/terms" element={<TermsOfService />} />
                 <Route path="/help" element={<Help />} />

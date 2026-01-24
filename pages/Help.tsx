@@ -12,7 +12,7 @@ export const Help: React.FC = () => {
           We're here to help! Reach out to us with any questions or concerns.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
           <div className="border-[3px] border-ink p-6 bg-cream hover:shadow-neo transition-all">
             <Mail className="mb-4" size={32} />
             <h3 className="font-heading text-2xl mb-2">Email Support</h3>

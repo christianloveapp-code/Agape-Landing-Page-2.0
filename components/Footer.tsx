@@ -16,6 +16,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="flex gap-6">
+          <Link to="/about" className="font-body text-lg font-bold hover:text-primary underline decoration-2 underline-offset-4 decoration-transparent hover:decoration-primary transition-all">About Us</Link>
           <Link to="/privacy" className="font-body text-lg font-bold hover:text-primary underline decoration-2 underline-offset-4 decoration-transparent hover:decoration-primary transition-all">Privacy Policy</Link>
           <Link to="/terms" className="font-body text-lg font-bold hover:text-primary underline decoration-2 underline-offset-4 decoration-transparent hover:decoration-primary transition-all">Terms of Service</Link>
           <Link to="/help" className="font-body text-lg font-bold hover:text-primary underline decoration-2 underline-offset-4 decoration-transparent hover:decoration-primary transition-all">Help</Link>

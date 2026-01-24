@@ -25,6 +25,7 @@ export const Navbar: React.FC = () => {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-6">
+          <Link to="/about" className="font-heading text-lg hover:text-primary hover:underline decoration-wavy decoration-2 underline-offset-4 transition-all">About Us</Link>
           <Link to="/faq" className="font-heading text-lg hover:text-primary hover:underline decoration-wavy decoration-2 underline-offset-4 transition-all">FAQ</Link>
           <Link to="/help" className="font-heading text-lg hover:text-primary hover:underline decoration-wavy decoration-2 underline-offset-4 transition-all">Help</Link>
 
@@ -41,6 +42,7 @@ export const Navbar: React.FC = () => {
       {/* Mobile Nav */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-cream border-b-[3px] border-ink p-6 flex flex-col gap-4 shadow-xl">
+          <Link to="/about" className="font-heading text-xl text-center" onClick={() => setIsOpen(false)}>About Us</Link>
           <Link to="/faq" className="font-heading text-xl text-center" onClick={() => setIsOpen(false)}>FAQ</Link>
           <Link to="/help" className="font-heading text-xl text-center" onClick={() => setIsOpen(false)}>Help</Link>
 
