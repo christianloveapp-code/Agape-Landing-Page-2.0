@@ -99,7 +99,7 @@ export const Hero: React.FC = () => {
             </div>
             {/* Profile Image */}
             <div className="relative flex-grow bg-gray-200">
-              <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Sarah&backgroundColor=c0aede" alt="Female Profile" className="w-full h-full object-cover" />
+              <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Sarah&top=longHair&hairColor=blonde&accessories=none&clothing=graphicShirt&eyes=default&eyebrows=default&mouth=smile&skinColor=light" alt="Female Profile" className="w-full h-full object-cover" />
               <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
                 <h3 className="font-heading text-2xl">Sarah, 23</h3>
                 <p className="font-body text-sm opacity-90">"I like to travel."</p>
@@ -135,7 +135,7 @@ export const Hero: React.FC = () => {
             </div>
             {/* Profile Image */}
             <div className="relative flex-grow bg-gray-200">
-              <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Felix&backgroundColor=b6e3f4" alt="Male Profile" className="w-full h-full object-cover" />
+              <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Jack&top=shortHair&hairColor=black&facialHair=beardLight&accessories=none&clothing=collarAndSweater&eyes=default&eyebrows=default&mouth=smile&skinColor=light" alt="Male Profile" className="w-full h-full object-cover" />
               <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
                 <h3 className="font-heading text-2xl">Jack, 25</h3>
                 <p className="font-body text-sm opacity-90">"I love Jesus"</p>
