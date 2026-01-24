@@ -96,6 +96,7 @@ export const Hero: React.FC = () => {
             <div className="p-3 border-b-[3px] border-ink flex gap-2 overflow-hidden bg-white flex-shrink-0">
               <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">18-35</div>
               <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">Quality Time</div>
+              <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">Pentecostal</div>
             </div>
             {/* Profile Image */}
             <div className="relative flex-grow bg-gray-200">
@@ -132,6 +133,7 @@ export const Hero: React.FC = () => {
             <div className="p-3 border-b-[3px] border-ink flex gap-2 overflow-hidden bg-white flex-shrink-0">
               <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">21-30</div>
               <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">Quality Time</div>
+              <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">Baptist</div>
             </div>
             {/* Profile Image */}
             <div className="relative flex-grow bg-gray-200">
