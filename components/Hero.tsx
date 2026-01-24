@@ -73,7 +73,7 @@ export const Hero: React.FC = () => {
 
         {/* Phone Frame */}
         {/* Two Intertwined Phones */}
-        <div className="relative w-full max-w-[600px] h-[600px] transform scale-75 sm:scale-90 md:scale-75">
+        <div className="relative w-full max-w-[600px] h-[600px] transform scale-[0.85] sm:scale-95 md:scale-[0.85]">
 
           {/* Decorative Sparks/Hearts Background */}
           <div className="absolute top-0 right-10 text-secondary animate-bounce delay-1000">
