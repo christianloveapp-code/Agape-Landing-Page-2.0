@@ -73,7 +73,7 @@ export const Hero: React.FC = () => {
 
         {/* Phone Frame */}
         {/* Two Intertwined Phones */}
-        <div className="relative w-full max-w-[600px] h-[600px] transform scale-90 sm:scale-100 md:scale-90">
+        <div className="relative w-full max-w-[600px] h-[600px] transform scale-75 sm:scale-90 md:scale-75">
 
           {/* Decorative Sparks/Hearts Background */}
           <div className="absolute top-0 right-10 text-secondary animate-bounce delay-1000">
@@ -84,7 +84,7 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Phone 1 (Back/Left - Male Profile) */}
-          <div className="absolute top-12 -left-12 sm:-left-8 w-[280px] h-[520px] bg-cream border-[4px] border-ink rounded-[36px] overflow-hidden shadow-neo transform -rotate-6 z-10 flex flex-col">
+          <div className="absolute top-12 -left-20 sm:-left-12 w-[280px] h-[520px] bg-cream border-[4px] border-ink rounded-[36px] overflow-hidden shadow-neo transform -rotate-6 z-10 flex flex-col">
             {/* Status Bar */}
             <div className="h-8 border-b-[3px] border-ink flex justify-between items-center px-4 bg-white flex-shrink-0">
               <Heart size={16} fill="#FF4757" className="text-primary" />
@@ -121,7 +121,7 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Phone 2 (Front/Right - Female Profile) */}
-          <div className="absolute top-12 -right-12 sm:-right-8 w-[280px] h-[520px] bg-cream border-[4px] border-ink rounded-[36px] overflow-hidden shadow-neo transform rotate-6 z-20 flex flex-col">
+          <div className="absolute top-12 -right-20 sm:-right-12 w-[280px] h-[520px] bg-cream border-[4px] border-ink rounded-[36px] overflow-hidden shadow-neo transform rotate-6 z-20 flex flex-col">
             {/* Status Bar */}
             <div className="h-8 border-b-[3px] border-ink flex justify-between items-center px-4 bg-white flex-shrink-0">
               <Heart size={16} fill="#FF4757" className="text-primary" />
