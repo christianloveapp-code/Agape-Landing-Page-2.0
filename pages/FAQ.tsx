@@ -73,7 +73,7 @@ export const FAQ: React.FC = () => {
                                 <div className="text-gray-600">
                                     <p className="mb-2">Premium members get the full experience:</p>
                                     <ul className="list-disc list-inside space-y-1 ml-2">
-                                        <li><strong>Unlimited Likes:</strong> Swipe as much as you want.</li>
+                                        <li><strong>Unlimited Super Likes:</strong> Superlike to directly message any user, skip the waiting period hoping they like you back to match.</li>
                                         <li><strong>Unlimited Rewinds:</strong> Accidentally passed on someone? Bring them back!</li>
                                         <li><strong>See Visitors:</strong> Unlock the list of people who have viewed your profile.</li>
                                         <li><strong>Unlimited Translations:</strong> Chat seamlessly with believers around the world.</li>
