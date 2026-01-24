@@ -32,7 +32,7 @@ export const FAQ: React.FC = () => {
                     <div>
                         <h3 className="font-bold text-xl mb-2">What platforms will Agape be available on?</h3>
                         <p className="text-gray-600">
-                            Agape will be available on both iOS (App Store) and Android (Google Play) at launch.
+                            We are launching first on Android in Spring 2026, and will be available on iPhones later on in the year.
                         </p>
                     </div>
                 </div>
