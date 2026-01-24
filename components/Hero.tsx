@@ -99,7 +99,7 @@ export const Hero: React.FC = () => {
             </div>
             {/* Profile Image */}
             <div className="relative flex-grow bg-gray-200">
-              <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Jack&backgroundColor=b6e3f4" alt="Male Profile" className="w-full h-full object-cover" />
+              <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Joshua&backgroundColor=b6e3f4" alt="Male Profile" className="w-full h-full object-cover" />
               <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
                 <h3 className="font-heading text-2xl">Jack, 25</h3>
                 <p className="font-body text-sm opacity-90">"I love Jesus"</p>
@@ -107,9 +107,9 @@ export const Hero: React.FC = () => {
             </div>
             {/* Action Buttons Mockup */}
             <div className="p-4 flex justify-between gap-2 bg-white border-t-[3px] border-ink flex-shrink-0">
-              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><RotateCcw size={18} /></div>
-              <div className="w-12 h-12 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><X size={24} /></div>
-              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-highlight shadow-[2px_2px_0px_#1a1a1a]"><Star size={18} fill="white" className="text-white" /></div>
+              <div className="w-12 h-12 rounded-full border-[3px] border-ink flex items-center justify-center bg-teal-100 shadow-[2px_2px_0px_#1a1a1a]"><RotateCcw size={20} className="text-teal-600" /></div>
+              <div className="w-12 h-12 rounded-full border-[3px] border-ink flex items-center justify-center bg-gray-100 shadow-[2px_2px_0px_#1a1a1a]"><X size={24} className="text-gray-600" /></div>
+              <div className="w-12 h-12 rounded-full border-[3px] border-ink flex items-center justify-center bg-highlight shadow-[2px_2px_0px_#1a1a1a]"><Star size={20} fill="white" className="text-white" /></div>
               <div className="w-12 h-12 rounded-full border-[3px] border-ink flex items-center justify-center bg-primary text-white shadow-[2px_2px_0px_#1a1a1a]"><Heart size={24} fill="white" /></div>
             </div>
           </div>
@@ -143,9 +143,9 @@ export const Hero: React.FC = () => {
             </div>
             {/* Action Buttons Mockup */}
             <div className="p-4 flex justify-between gap-2 bg-white border-t-[3px] border-ink flex-shrink-0">
-              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><RotateCcw size={18} /></div>
-              <div className="w-12 h-12 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><X size={24} /></div>
-              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-highlight shadow-[2px_2px_0px_#1a1a1a]"><Star size={18} fill="white" className="text-white" /></div>
+              <div className="w-12 h-12 rounded-full border-[3px] border-ink flex items-center justify-center bg-teal-100 shadow-[2px_2px_0px_#1a1a1a]"><RotateCcw size={20} className="text-teal-600" /></div>
+              <div className="w-12 h-12 rounded-full border-[3px] border-ink flex items-center justify-center bg-gray-100 shadow-[2px_2px_0px_#1a1a1a]"><X size={24} className="text-gray-600" /></div>
+              <div className="w-12 h-12 rounded-full border-[3px] border-ink flex items-center justify-center bg-highlight shadow-[2px_2px_0px_#1a1a1a]"><Star size={20} fill="white" className="text-white" /></div>
               <div className="w-12 h-12 rounded-full border-[3px] border-ink flex items-center justify-center bg-primary text-white shadow-[2px_2px_0px_#1a1a1a]"><Heart size={24} fill="white" /></div>
             </div>
           </div>
