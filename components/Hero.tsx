@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Sparkles, Apple, Play } from 'lucide-react';
+import { Heart, Sparkles, Apple, Play, RotateCcw, X, Star } from 'lucide-react';
 import { Button } from './ui/Button';
 
 export const Hero: React.FC = () => {
@@ -69,8 +69,7 @@ export const Hero: React.FC = () => {
       {/* Visual / Phone Mockup */}
       <div className="flex-1 w-full max-w-md relative mt-12 md:mt-0">
         {/* Decorative elements behind phone */}
-        <div className="absolute top-10 -right-4 w-24 h-24 bg-secondary rounded-full border-[3px] border-ink z-0 animate-bounce delay-700"></div>
-        <div className="absolute -bottom-6 -left-6 w-full h-full bg-ink rounded-[40px] transform rotate-3 z-0"></div>
+
 
         {/* Phone Frame */}
         {/* Two Intertwined Phones */}
@@ -85,32 +84,33 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Phone 1 (Back/Left - Male Profile) */}
-          <div className="absolute top-10 left-4 w-[280px] bg-cream border-[4px] border-ink rounded-[36px] overflow-hidden shadow-neo transform -rotate-6 z-10">
+          <div className="absolute top-10 left-4 w-[280px] h-[520px] bg-cream border-[4px] border-ink rounded-[36px] overflow-hidden shadow-neo transform -rotate-6 z-10 flex flex-col">
             {/* Status Bar */}
-            <div className="h-8 border-b-[3px] border-ink flex justify-between items-center px-4 bg-white">
+            <div className="h-8 border-b-[3px] border-ink flex justify-between items-center px-4 bg-white flex-shrink-0">
               <Heart size={16} fill="#FF4757" className="text-primary" />
               <div className="flex gap-1">
                 <div className="w-12 h-2 bg-gray-200 rounded-full"></div>
               </div>
             </div>
             {/* Filters Mockup */}
-            <div className="p-3 border-b-[3px] border-ink flex gap-2 overflow-hidden bg-white">
+            <div className="p-3 border-b-[3px] border-ink flex gap-2 overflow-hidden bg-white flex-shrink-0">
               <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">18-35</div>
               <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">All Denominations</div>
             </div>
             {/* Profile Image */}
-            <div className="relative h-[250px] bg-gray-200">
-              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=500&fit=crop" alt="Male Profile" className="w-full h-full object-cover" />
+            <div className="relative flex-grow bg-gray-200">
+              <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Jack&backgroundColor=b6e3f4" alt="Male Profile" className="w-full h-full object-cover" />
               <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
                 <h3 className="font-heading text-2xl">Jack, 25</h3>
                 <p className="font-body text-sm opacity-90">"I love Jesus"</p>
               </div>
             </div>
             {/* Action Buttons Mockup */}
-            <div className="p-4 flex justify-center gap-4 bg-white border-t-[3px] border-ink">
-              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><span className="font-heading">X</span></div>
-              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><span className="font-heading">⭐</span></div>
-              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-primary text-white shadow-[2px_2px_0px_#1a1a1a]"><Heart size={16} fill="white" /></div>
+            <div className="p-4 flex justify-between gap-2 bg-white border-t-[3px] border-ink flex-shrink-0">
+              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><RotateCcw size={18} /></div>
+              <div className="w-12 h-12 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><X size={24} /></div>
+              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-highlight shadow-[2px_2px_0px_#1a1a1a]"><Star size={18} fill="white" className="text-white" /></div>
+              <div className="w-12 h-12 rounded-full border-[3px] border-ink flex items-center justify-center bg-primary text-white shadow-[2px_2px_0px_#1a1a1a]"><Heart size={24} fill="white" /></div>
             </div>
           </div>
 
@@ -120,32 +120,33 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Phone 2 (Front/Right - Female Profile) */}
-          <div className="absolute top-24 right-4 w-[280px] bg-cream border-[4px] border-ink rounded-[36px] overflow-hidden shadow-neo transform rotate-6 z-20">
+          <div className="absolute top-24 right-4 w-[280px] h-[520px] bg-cream border-[4px] border-ink rounded-[36px] overflow-hidden shadow-neo transform rotate-6 z-20 flex flex-col">
             {/* Status Bar */}
-            <div className="h-8 border-b-[3px] border-ink flex justify-between items-center px-4 bg-white">
+            <div className="h-8 border-b-[3px] border-ink flex justify-between items-center px-4 bg-white flex-shrink-0">
               <Heart size={16} fill="#FF4757" className="text-primary" />
               <div className="flex gap-1">
                 <div className="w-12 h-2 bg-gray-200 rounded-full"></div>
               </div>
             </div>
             {/* Filters Mockup */}
-            <div className="p-3 border-b-[3px] border-ink flex gap-2 overflow-hidden bg-white">
+            <div className="p-3 border-b-[3px] border-ink flex gap-2 overflow-hidden bg-white flex-shrink-0">
               <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">21-30</div>
               <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">Baptist</div>
             </div>
             {/* Profile Image */}
-            <div className="relative h-[250px] bg-gray-200">
-              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop" alt="Female Profile" className="w-full h-full object-cover" />
+            <div className="relative flex-grow bg-gray-200">
+              <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Sara&backgroundColor=c0aede" alt="Female Profile" className="w-full h-full object-cover" />
               <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
                 <h3 className="font-heading text-2xl">Sara, 23</h3>
-                <p className="font-body text-sm opacity-90">"I like to travel. I'm from Spain"</p>
+                <p className="font-body text-sm opacity-90">"I like to travel."</p>
               </div>
             </div>
             {/* Action Buttons Mockup */}
-            <div className="p-4 flex justify-center gap-4 bg-white border-t-[3px] border-ink">
-              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><span className="font-heading">X</span></div>
-              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><span className="font-heading">⭐</span></div>
-              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-primary text-white shadow-[2px_2px_0px_#1a1a1a]"><Heart size={16} fill="white" /></div>
+            <div className="p-4 flex justify-between gap-2 bg-white border-t-[3px] border-ink flex-shrink-0">
+              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><RotateCcw size={18} /></div>
+              <div className="w-12 h-12 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><X size={24} /></div>
+              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-highlight shadow-[2px_2px_0px_#1a1a1a]"><Star size={18} fill="white" className="text-white" /></div>
+              <div className="w-12 h-12 rounded-full border-[3px] border-ink flex items-center justify-center bg-primary text-white shadow-[2px_2px_0px_#1a1a1a]"><Heart size={24} fill="white" /></div>
             </div>
           </div>
 
