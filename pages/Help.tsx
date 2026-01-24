@@ -43,40 +43,7 @@ export const Help: React.FC = () => {
           </div>
         </div>
 
-        <section className="border-t-[3px] border-ink pt-8">
-          <h2 className="font-heading text-3xl mb-6">Frequently Asked Questions</h2>
 
-          <div className="space-y-6 font-body text-lg">
-            <div>
-              <h3 className="font-bold text-xl mb-2">When will Agape launch?</h3>
-              <p className="text-gray-600">
-                We're launching in 2026! Join our waitlist to be notified when we go live.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-bold text-xl mb-2">Is Agape free to use?</h3>
-              <p className="text-gray-600">
-                We'll offer both free and premium membership options. More details coming soon!
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-bold text-xl mb-2">How do you verify Christian faith?</h3>
-              <p className="text-gray-600">
-                We use a combination of profile verification and community guidelines to maintain
-                a genuine Christian community.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-bold text-xl mb-2">What platforms will Agape be available on?</h3>
-              <p className="text-gray-600">
-                Agape will be available on both iOS (App Store) and Android (Google Play) at launch.
-              </p>
-            </div>
-          </div>
-        </section>
       </div>
     </main>
   );
