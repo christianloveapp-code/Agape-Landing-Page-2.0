@@ -99,8 +99,8 @@ export const Hero: React.FC = () => {
               <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">Pentecostal</div>
             </div>
             {/* Profile Image */}
-            <div className="relative flex-grow bg-gray-200">
-              <img src="/images/hero-sarah.jpg" alt="Female Profile" className="w-full h-full object-cover" />
+            <div className="relative flex-grow bg-gray-200 min-h-0">
+              <img src="/images/hero-sarah.jpg" alt="Female Profile" className="w-full h-full object-cover object-top" />
               <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
                 <h3 className="font-heading text-2xl">Sarah, 23</h3>
                 <p className="font-body text-sm opacity-90">"I like to travel."</p>
@@ -136,8 +136,8 @@ export const Hero: React.FC = () => {
               <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">Baptist</div>
             </div>
             {/* Profile Image */}
-            <div className="relative flex-grow bg-gray-200">
-              <img src="/images/hero-jack.jpg" alt="Male Profile" className="w-full h-full object-cover" />
+            <div className="relative flex-grow bg-gray-200 min-h-0">
+              <img src="/images/hero-jack.jpg" alt="Male Profile" className="w-full h-full object-cover object-top" />
               <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
                 <h3 className="font-heading text-2xl">Jack, 25</h3>
                 <p className="font-body text-sm opacity-90">"I love Jesus"</p>
