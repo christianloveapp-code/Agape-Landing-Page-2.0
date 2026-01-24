@@ -34,23 +34,24 @@ export const Hero: React.FC = () => {
           <div className="flex flex-col items-center md:items-start gap-3">
             <p className="font-heading text-lg text-gray-500 transform -rotate-1">Available soon on:</p>
             <div className="flex gap-4">
-              {/* Google Play Badge - Left, White/Clean Style */}
-              <button className="flex items-center gap-3 bg-white text-gray-900 px-5 py-2 rounded-xl border-[3px] border-gray-900 hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_0px_#ea4335] active:translate-y-0 active:shadow-none transition-all duration-200 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                <Play size={26} fill="currentColor" className="ml-1 text-[#ea4335]" />
-                <div className="text-left leading-none">
-                  <div className="text-[10px] font-body font-bold tracking-wider opacity-90 uppercase">Get it on</div>
-                  <div className="font-heading text-lg mt-0.5">Google Play</div>
-                </div>
-              </button>
-              {/* App Store Badge - Right, Black/Clean Style */}
-              {/* App Store Badge - Right, Blue Gradient Style */}
-              <button className="flex items-center gap-3 bg-gradient-to-br from-[#007AFF] to-[#00C7FC] text-white px-5 py-2 rounded-xl border-[3px] border-white/20 hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.5)] active:translate-y-0 active:shadow-none transition-all duration-200 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)]">
-                <Apple size={28} fill="currentColor" />
-                <div className="text-left leading-none">
-                  <div className="text-[10px] font-body font-bold tracking-wider opacity-90">Download on the</div>
-                  <div className="font-heading text-lg mt-0.5">App Store</div>
-                </div>
-              </button>
+              <div className="flex gap-4">
+                {/* Google Play Badge - Left, White/Clean Style */}
+                <button className="flex items-center gap-3 bg-white text-gray-900 px-5 py-2 rounded-xl border-[3px] border-gray-900 hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_0px_#ea4335] active:translate-y-0 active:shadow-none transition-all duration-200 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg" alt="Google Play" className="w-7 h-7 ml-1" />
+                  <div className="text-left leading-none">
+                    <div className="text-[10px] font-body font-bold tracking-wider opacity-90 uppercase">Get it on</div>
+                    <div className="font-heading text-lg mt-0.5">Google Play</div>
+                  </div>
+                </button>
+                {/* App Store Badge - Right, Blue Gradient Style */}
+                <button className="flex items-center gap-3 bg-gradient-to-br from-[#007AFF] to-[#00C7FC] text-white px-5 py-2 rounded-xl border-[3px] border-white/20 hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_0px_#1a1a1a] active:translate-y-0 active:shadow-none transition-all duration-200 shadow-[4px_4px_0px_0px_#1a1a1a]">
+                  <Apple size={28} fill="currentColor" />
+                  <div className="text-left leading-none">
+                    <div className="text-[10px] font-body font-bold tracking-wider opacity-90">Download on the</div>
+                    <div className="font-heading text-lg mt-0.5">App Store</div>
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
