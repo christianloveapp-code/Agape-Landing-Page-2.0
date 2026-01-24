@@ -100,7 +100,7 @@ export const Hero: React.FC = () => {
             </div>
             {/* Profile Image */}
             <div className="relative flex-grow bg-gray-200">
-              <img src="https://api.dicebear.com/9.x/micah/svg?seed=Sarah&baseColor=f9c9b6&hair=fondant&mouth=smile" alt="Female Profile" className="w-full h-full object-cover" />
+              <img src="https://api.dicebear.com/7.x/micah/svg?seed=Molly" alt="Female Profile" className="w-full h-full object-cover" />
               <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
                 <h3 className="font-heading text-2xl">Sarah, 23</h3>
                 <p className="font-body text-sm opacity-90">"I like to travel."</p>
@@ -137,7 +137,7 @@ export const Hero: React.FC = () => {
             </div>
             {/* Profile Image */}
             <div className="relative flex-grow bg-gray-200">
-              <img src="https://api.dicebear.com/9.x/micah/svg?seed=Felix&baseColor=ac6651&hair=fonze&mouth=smile" alt="Male Profile" className="w-full h-full object-cover" />
+              <img src="https://api.dicebear.com/7.x/micah/svg?seed=Jack" alt="Male Profile" className="w-full h-full object-cover" />
               <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
                 <h3 className="font-heading text-2xl">Jack, 25</h3>
                 <p className="font-body text-sm opacity-90">"I love Jesus"</p>
