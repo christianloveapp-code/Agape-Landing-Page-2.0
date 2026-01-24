@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { Mail, Book, Shield, Trash2 } from 'lucide-react';
 
 
-export const Support: React.FC = () => {
+export const Help: React.FC = () => {
   return (
     <main className="container mx-auto px-4 max-w-4xl py-12 pb-24">
       <div className="bg-white border-[3px] border-ink p-8 md:p-12 shadow-neo">
-        <h1 className="font-heading text-4xl md:text-5xl mb-4 text-primary">Support</h1>
+        <h1 className="font-heading text-4xl md:text-5xl mb-4 text-primary">Help</h1>
         <p className="font-body text-xl text-gray-600 mb-12">
           We're here to help! Reach out to us with any questions or concerns.
         </p>

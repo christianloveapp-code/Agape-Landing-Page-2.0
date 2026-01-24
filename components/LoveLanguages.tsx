@@ -22,12 +22,10 @@ export const LoveLanguages: React.FC = () => {
                 <div className="relative z-10 flex flex-col md:flex-row items-center gap-12">
 
                     <div className="flex-1 text-center md:text-left">
-                        <div className="inline-block bg-white px-4 py-1 rounded-full border-[2px] border-ink text-sm font-bold mb-4 shadow-[2px_2px_0px_#1a1a1a]">
-                            Coming Feature
-                        </div>
+
                         <h2 className="font-heading text-4xl md:text-5xl mb-6">
                             Speak the Same <br />
-                            <span className="text-primary">Heart Language</span>
+                            <span className="text-primary">Love Language</span>
                         </h2>
                         <p className="font-body text-xl text-gray-700 leading-relaxed mb-8">
                             Don't just match based on looks. Find someone who understands how you give and receive love. Filter by Love Language™ to find your deepest connection.

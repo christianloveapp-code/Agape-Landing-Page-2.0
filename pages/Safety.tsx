@@ -94,10 +94,10 @@ export const Safety: React.FC = () => {
             Report a Safety Concern
           </a>
           <a
-            href="/support"
+            href="/help"
             className="font-heading text-lg px-8 py-3 bg-white border-[3px] border-ink shadow-neo hover:shadow-neo-hover transition-all"
           >
-            Contact Support
+            Contact Help
           </a>
         </div>
       </div>
