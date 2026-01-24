@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Book, Shield, Trash2 } from 'lucide-react';
+import { Mail, Shield, Trash2 } from 'lucide-react';
 
 
 export const Help: React.FC = () => {
@@ -31,12 +31,7 @@ export const Help: React.FC = () => {
             </Link>
           </div>
 
-          <div className="border-[3px] border-ink p-6 bg-cream hover:shadow-neo transition-all">
-            <Book className="mb-4" size={32} />
-            <h3 className="font-heading text-2xl mb-2">Help Center</h3>
-            <p className="font-body mb-4">Browse our comprehensive knowledge base.</p>
-            <a href="#" className="text-primary underline font-bold">Visit Help Center</a>
-          </div>
+
 
           <div className="border-[3px] border-ink p-6 bg-cream hover:shadow-neo transition-all">
             <Shield className="mb-4" size={32} />
