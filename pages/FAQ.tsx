@@ -10,14 +10,14 @@ export const FAQ: React.FC = () => {
                     <div>
                         <h3 className="font-bold text-xl mb-2">When will Agape launch?</h3>
                         <p className="text-gray-600">
-                            We're launching in 2026! Join our waitlist to be notified when we go live.
+                            We're launching in Spring 2026! Stay tuned for updates.
                         </p>
                     </div>
 
                     <div>
                         <h3 className="font-bold text-xl mb-2">Is Agape free to use?</h3>
                         <p className="text-gray-600">
-                            We'll offer both free and premium membership options. More details coming soon!
+                            Yes, the app is completely free to use, but we also offer a subscription for more features and a better experience.
                         </p>
                     </div>
 
