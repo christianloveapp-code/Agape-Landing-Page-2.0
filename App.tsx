@@ -10,6 +10,7 @@ import { Stories } from './pages/Stories';
 import { Safety } from './pages/Safety';
 import { AuthVerify } from './pages/AuthVerify';
 import { AuthResetPassword } from './pages/AuthResetPassword';
+import { AccountDeletion } from './pages/AccountDeletion';
 
 const App: React.FC = () => {
   return (
@@ -34,6 +35,7 @@ const App: React.FC = () => {
                 <Route path="/support" element={<Support />} />
                 <Route path="/stories" element={<Stories />} />
                 <Route path="/safety" element={<Safety />} />
+                <Route path="/account-deletion" element={<AccountDeletion />} />
               </Routes>
               <Footer />
             </div>
