@@ -34,20 +34,20 @@ export const Hero: React.FC = () => {
           <div className="flex flex-col items-center md:items-start gap-3">
             <p className="font-heading text-lg text-gray-500 transform -rotate-1">Available soon on:</p>
             <div className="flex gap-4">
-              {/* App Store Badge */}
-              <button className="flex items-center gap-3 bg-ink text-cream px-5 py-2 rounded-xl border-[3px] border-ink hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_0px_#4ecdc4] active:translate-y-0 active:shadow-none transition-all duration-200">
-                <Apple size={28} fill="#fff9f0" />
+              {/* Google Play Badge - Left, White/Clean Style */}
+              <button className="flex items-center gap-3 bg-white text-gray-900 px-5 py-2 rounded-xl border-[3px] border-gray-900 hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_0px_#ea4335] active:translate-y-0 active:shadow-none transition-all duration-200 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <Play size={26} fill="currentColor" className="ml-1 text-[#ea4335]" />
+                <div className="text-left leading-none">
+                  <div className="text-[10px] font-body font-bold tracking-wider opacity-90 uppercase">Get it on</div>
+                  <div className="font-heading text-lg mt-0.5">Google Play</div>
+                </div>
+              </button>
+              {/* App Store Badge - Right, Black/Clean Style */}
+              <button className="flex items-center gap-3 bg-gray-900 text-white px-5 py-2 rounded-xl border-[3px] border-gray-900 hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_0px_#00c7fc] active:translate-y-0 active:shadow-none transition-all duration-200 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
+                <Apple size={28} fill="currentColor" />
                 <div className="text-left leading-none">
                   <div className="text-[10px] font-body font-bold tracking-wider opacity-90">Download on the</div>
                   <div className="font-heading text-lg mt-0.5">App Store</div>
-                </div>
-              </button>
-              {/* Google Play Badge */}
-              <button className="flex items-center gap-3 bg-ink text-cream px-5 py-2 rounded-xl border-[3px] border-ink hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_0px_#FFD32A] active:translate-y-0 active:shadow-none transition-all duration-200">
-                <Play size={26} fill="#fff9f0" className="ml-1" />
-                <div className="text-left leading-none">
-                  <div className="text-[10px] font-body font-bold tracking-wider opacity-90">GET IT ON</div>
-                  <div className="font-heading text-lg mt-0.5">Google Play</div>
                 </div>
               </button>
             </div>
