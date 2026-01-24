@@ -1,6 +1,7 @@
 import React from 'react';
-import { Mail, MessageCircle, Book, Shield } from 'lucide-react';
-import { Button } from '../components/ui/Button';
+import { Link } from 'react-router-dom';
+import { Mail, Book, Shield, Trash2 } from 'lucide-react';
+
 
 export const Support: React.FC = () => {
   return (
@@ -22,10 +23,12 @@ export const Support: React.FC = () => {
           </div>
 
           <div className="border-[3px] border-ink p-6 bg-cream hover:shadow-neo transition-all">
-            <MessageCircle className="mb-4" size={32} />
-            <h3 className="font-heading text-2xl mb-2">Live Chat</h3>
-            <p className="font-body mb-4">Chat with our support team in real-time.</p>
-            <Button variant="primary" className="w-full">Start Chat</Button>
+            <Trash2 className="mb-4" size={32} />
+            <h3 className="font-heading text-2xl mb-2">Delete Account</h3>
+            <p className="font-body mb-4">Permanently delete your account and associated data.</p>
+            <Link to="/account-deletion" className="text-primary underline font-bold">
+              View Instructions
+            </Link>
           </div>
 
           <div className="border-[3px] border-ink p-6 bg-cream hover:shadow-neo transition-all">
