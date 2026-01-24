@@ -33,7 +33,7 @@ const App: React.FC = () => {
                 <Route path="/privacy" element={<PrivacyPolicy />} />
                 <Route path="/terms" element={<TermsOfService />} />
                 <Route path="/support" element={<Support />} />
-                <Route path="/stories" element={<Stories />} />
+                {/* <Route path="/stories" element={<Stories />} /> */}
                 <Route path="/safety" element={<Safety />} />
                 <Route path="/account-deletion" element={<AccountDeletion />} />
               </Routes>
