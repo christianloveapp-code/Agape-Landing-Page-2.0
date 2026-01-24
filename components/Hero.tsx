@@ -73,45 +73,82 @@ export const Hero: React.FC = () => {
         <div className="absolute -bottom-6 -left-6 w-full h-full bg-ink rounded-[40px] transform rotate-3 z-0"></div>
 
         {/* Phone Frame */}
-        <div className="relative bg-white border-[4px] border-ink rounded-[36px] overflow-hidden shadow-neo z-10">
-          {/* Notch area */}
-          <div className="bg-cream h-12 border-b-[3px] border-ink flex items-center justify-center px-6">
-            <div className="w-16 h-4 bg-ink rounded-full opacity-20"></div>
+        {/* Two Intertwined Phones */}
+        <div className="relative w-full max-w-[600px] h-[600px]">
+
+          {/* Decorative Sparks/Hearts Background */}
+          <div className="absolute top-0 right-10 text-secondary animate-bounce delay-1000">
+            <Sparkles size={40} fill="currentColor" />
+          </div>
+          <div className="absolute bottom-20 left-0 text-highlight animate-pulse">
+            <Heart size={30} fill="currentColor" />
           </div>
 
-          {/* Screen Content */}
-          <div className="p-6 bg-cream min-h-[400px] flex flex-col items-center">
-
-            {/* Match Card */}
-            <div className="w-full bg-white border-[3px] border-ink rounded-2xl overflow-hidden shadow-[4px_4px_0px_#1a1a1a] mb-6 transform -rotate-1 hover:rotate-0 transition-transform duration-300">
-              <div className="h-48 bg-gray-200 border-b-[3px] border-ink relative">
-                <img src="https://picsum.photos/400/300?random=10" alt="Match" className="w-full h-full object-cover" />
-                <div className="absolute bottom-2 right-2 bg-white px-2 py-1 border-[2px] border-ink rounded-lg font-heading text-sm">
-                  24, Graphic Designer
-                </div>
-              </div>
-              <div className="p-4">
-                <h3 className="font-heading text-xl">Grace, 24</h3>
-                <p className="font-body text-lg leading-tight mt-1">"Love hiking and coffee shops. Looking for someone to share Sunday service with."</p>
-
-                <div className="flex gap-2 mt-3 flex-wrap">
-                  <span className="bg-secondary/30 px-2 py-1 rounded-md border-[2px] border-ink text-xs font-bold">Worship Leader</span>
-                  <span className="bg-highlight/30 px-2 py-1 rounded-md border-[2px] border-ink text-xs font-bold">Coffee</span>
-                </div>
+          {/* Phone 1 (Back/Left - Male Profile) */}
+          <div className="absolute top-10 left-4 w-[280px] bg-cream border-[4px] border-ink rounded-[36px] overflow-hidden shadow-neo transform -rotate-6 z-10">
+            {/* Status Bar */}
+            <div className="h-8 border-b-[3px] border-ink flex justify-between items-center px-4 bg-white">
+              <Heart size={16} fill="#FF4757" className="text-primary" />
+              <div className="flex gap-1">
+                <div className="w-12 h-2 bg-gray-200 rounded-full"></div>
               </div>
             </div>
-
-            {/* Action Buttons */}
-            <div className="flex gap-4 w-full justify-center">
-              <button className="w-14 h-14 bg-white border-[3px] border-ink rounded-full flex items-center justify-center shadow-[3px_3px_0px_#1a1a1a] hover:bg-gray-100 transition-colors">
-                <span className="font-heading text-2xl">X</span>
-              </button>
-              <button className="w-14 h-14 bg-primary border-[3px] border-ink rounded-full flex items-center justify-center shadow-[3px_3px_0px_#1a1a1a] hover:translate-y-1 hover:shadow-none transition-all">
-                <Heart fill="white" stroke="white" size={28} />
-              </button>
+            {/* Filters Mockup */}
+            <div className="p-3 border-b-[3px] border-ink flex gap-2 overflow-hidden bg-white">
+              <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">18-35</div>
+              <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">All Denominations</div>
             </div>
-
+            {/* Profile Image */}
+            <div className="relative h-[250px] bg-gray-200">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=500&fit=crop" alt="Male Profile" className="w-full h-full object-cover" />
+              <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
+                <h3 className="font-heading text-2xl">Jack, 25</h3>
+                <p className="font-body text-sm opacity-90">"I love Jesus"</p>
+              </div>
+            </div>
+            {/* Action Buttons Mockup */}
+            <div className="p-4 flex justify-center gap-4 bg-white border-t-[3px] border-ink">
+              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><span className="font-heading">X</span></div>
+              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><span className="font-heading">⭐</span></div>
+              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-primary text-white shadow-[2px_2px_0px_#1a1a1a]"><Heart size={16} fill="white" /></div>
+            </div>
           </div>
+
+          {/* Central Connection Heart */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30">
+            <Heart size={80} fill="#FF4757" stroke="#1a1a1a" strokeWidth={3} className="drop-shadow-[4px_4px_0px_#1a1a1a] animate-pulse" />
+          </div>
+
+          {/* Phone 2 (Front/Right - Female Profile) */}
+          <div className="absolute top-24 right-4 w-[280px] bg-cream border-[4px] border-ink rounded-[36px] overflow-hidden shadow-neo transform rotate-6 z-20">
+            {/* Status Bar */}
+            <div className="h-8 border-b-[3px] border-ink flex justify-between items-center px-4 bg-white">
+              <Heart size={16} fill="#FF4757" className="text-primary" />
+              <div className="flex gap-1">
+                <div className="w-12 h-2 bg-gray-200 rounded-full"></div>
+              </div>
+            </div>
+            {/* Filters Mockup */}
+            <div className="p-3 border-b-[3px] border-ink flex gap-2 overflow-hidden bg-white">
+              <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">21-30</div>
+              <div className="px-2 py-1 border-[2px] border-ink rounded-full text-[10px] font-bold">Baptist</div>
+            </div>
+            {/* Profile Image */}
+            <div className="relative h-[250px] bg-gray-200">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop" alt="Female Profile" className="w-full h-full object-cover" />
+              <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
+                <h3 className="font-heading text-2xl">Sara, 23</h3>
+                <p className="font-body text-sm opacity-90">"I like to travel. I'm from Spain"</p>
+              </div>
+            </div>
+            {/* Action Buttons Mockup */}
+            <div className="p-4 flex justify-center gap-4 bg-white border-t-[3px] border-ink">
+              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><span className="font-heading">X</span></div>
+              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-white shadow-[2px_2px_0px_#1a1a1a]"><span className="font-heading">⭐</span></div>
+              <div className="w-10 h-10 rounded-full border-[3px] border-ink flex items-center justify-center bg-primary text-white shadow-[2px_2px_0px_#1a1a1a]"><Heart size={16} fill="white" /></div>
+            </div>
+          </div>
+
         </div>
 
         {/* Floating Sticker */}
