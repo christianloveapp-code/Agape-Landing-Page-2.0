@@ -80,7 +80,7 @@ export const TermsOfService: React.FC = () => {
             <h2 className="font-heading text-2xl mb-3 mt-8">Contact Us</h2>
             <p>
               If you have questions about these Terms, please contact us at{' '}
-              <a href="mailto:legal@agape.com" className="text-primary underline">legal@agape.com</a>
+              <a href="mailto:team@agapechristianlove.com" className="text-primary underline">team@agapechristianlove.com</a>
             </p>
           </section>
         </div>

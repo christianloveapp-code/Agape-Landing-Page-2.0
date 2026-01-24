@@ -17,8 +17,8 @@ export const Support: React.FC = () => {
             <Mail className="mb-4" size={32} />
             <h3 className="font-heading text-2xl mb-2">Email Support</h3>
             <p className="font-body mb-4">Get help via email. We typically respond within 24 hours.</p>
-            <a href="mailto:support@agape.com" className="text-primary underline font-bold">
-              support@agape.com
+            <a href="mailto:team@agapechristianlove.com" className="text-primary underline font-bold">
+              team@agapechristianlove.com
             </a>
           </div>
 
@@ -42,8 +42,8 @@ export const Support: React.FC = () => {
             <Shield className="mb-4" size={32} />
             <h3 className="font-heading text-2xl mb-2">Report an Issue</h3>
             <p className="font-body mb-4">Report safety concerns or inappropriate behavior.</p>
-            <a href="mailto:safety@agape.com" className="text-primary underline font-bold">
-              safety@agape.com
+            <a href="mailto:team@agapechristianlove.com" className="text-primary underline font-bold">
+              team@agapechristianlove.com
             </a>
           </div>
         </div>

@@ -88,7 +88,7 @@ export const Safety: React.FC = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="mailto:safety@agape.com"
+            href="mailto:team@agapechristianlove.com"
             className="font-heading text-lg px-8 py-3 bg-primary text-white border-[3px] border-ink shadow-neo hover:shadow-neo-hover transition-all"
           >
             Report a Safety Concern

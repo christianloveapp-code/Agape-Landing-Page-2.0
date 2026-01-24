@@ -66,7 +66,7 @@ export const PrivacyPolicy: React.FC = () => {
             <h2 className="font-heading text-2xl mb-3 mt-8">Contact Us</h2>
             <p>
               If you have any questions about this Privacy Policy, please contact us at{' '}
-              <a href="mailto:privacy@agape.com" className="text-primary underline">privacy@agape.com</a>
+              <a href="mailto:team@agapechristianlove.com" className="text-primary underline">team@agapechristianlove.com</a>
             </p>
           </section>
         </div>
