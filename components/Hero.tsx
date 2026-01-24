@@ -43,7 +43,8 @@ export const Hero: React.FC = () => {
                 </div>
               </button>
               {/* App Store Badge - Right, Black/Clean Style */}
-              <button className="flex items-center gap-3 bg-gray-900 text-white px-5 py-2 rounded-xl border-[3px] border-gray-900 hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_0px_#00c7fc] active:translate-y-0 active:shadow-none transition-all duration-200 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
+              {/* App Store Badge - Right, Blue Gradient Style */}
+              <button className="flex items-center gap-3 bg-gradient-to-br from-[#007AFF] to-[#00C7FC] text-white px-5 py-2 rounded-xl border-[3px] border-white/20 hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.5)] active:translate-y-0 active:shadow-none transition-all duration-200 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)]">
                 <Apple size={28} fill="currentColor" />
                 <div className="text-left leading-none">
                   <div className="text-[10px] font-body font-bold tracking-wider opacity-90">Download on the</div>
