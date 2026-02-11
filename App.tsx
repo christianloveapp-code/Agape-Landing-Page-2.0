@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
+import { ScrollToTop } from './components/ScrollToTop';
 import { Home } from './pages/Home';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfService } from './pages/TermsOfService';
@@ -17,6 +18,7 @@ import { AccountDeletion } from './pages/AccountDeletion';
 const App: React.FC = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         {/* Auth routes - no navbar/footer */}
         <Route path="/auth/verify" element={<AuthVerify />} />
