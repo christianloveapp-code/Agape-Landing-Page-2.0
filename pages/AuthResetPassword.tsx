@@ -129,7 +129,16 @@ export const AuthResetPassword: React.FC = () => {
                   <span className="font-bold">App Store</span>
                 </a>
                 <a
-                  href="https://play.google.com/store/apps/details?id=com.agape"
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const isAndroid = /android/i.test(navigator.userAgent || navigator.vendor || (window as any).opera);
+                    if (isAndroid) {
+                      window.location.href = 'market://details?id=com.agape.christiandating';
+                    } else {
+                      window.open('https://play.google.com/store/apps/details?id=com.agape.christiandating', '_blank', 'noopener,noreferrer');
+                    }
+                  }}
                   className="flex items-center justify-center gap-2 px-5 py-2.5 bg-ink text-cream rounded-xl border-[3px] border-ink hover:-translate-y-1 hover:shadow-[4px_4px_0px_#FFD32A] transition-all"
                 >
                   <Play size={20} fill="currentColor" />

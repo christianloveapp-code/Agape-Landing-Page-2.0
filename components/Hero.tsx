@@ -3,6 +3,15 @@ import { Heart, Sparkles, Apple, Play, RotateCcw, X, Star } from 'lucide-react';
 import { Button } from './ui/Button';
 
 export const Hero: React.FC = () => {
+  const handleGooglePlayClick = () => {
+    const isAndroid = /android/i.test(navigator.userAgent || navigator.vendor || (window as any).opera);
+    if (isAndroid) {
+      window.location.href = 'market://details?id=com.agape.christiandating';
+    } else {
+      window.open('https://play.google.com/store/apps/details?id=com.agape.christiandating', '_blank', 'noopener,noreferrer');
+    }
+  };
+
   return (
     <section className="pt-12 md:pt-24 flex flex-col md:flex-row items-center gap-12 md:gap-20">
 
@@ -36,7 +45,10 @@ export const Hero: React.FC = () => {
             <div className="flex gap-4">
               <div className="flex gap-4">
                 {/* Google Play Badge - Left, White/Clean Style */}
-                <button className="flex items-center gap-3 bg-white text-gray-900 px-5 py-2 rounded-xl border-[3px] border-gray-900 hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_0px_#ea4335] active:translate-y-0 active:shadow-none transition-all duration-200 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <button 
+                  onClick={handleGooglePlayClick}
+                  className="flex items-center gap-3 bg-white text-gray-900 px-5 py-2 rounded-xl border-[3px] border-gray-900 hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_0px_#ea4335] active:translate-y-0 active:shadow-none transition-all duration-200 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+                >
                   <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg" alt="Google Play" className="w-7 h-7 ml-1" />
                   <div className="text-left leading-none">
                     <div className="text-[10px] font-body font-bold tracking-wider opacity-90 uppercase">Get it on</div>
